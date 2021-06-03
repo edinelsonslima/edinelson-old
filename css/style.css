@@ -15,7 +15,7 @@ body{
     align-items: center;
     justify-content:center;
     flex-wrap: wrap;
-    width: 98vw;
+    width: 98.4vw;
     background-color: rgb(15, 7, 43);
 }
 
@@ -36,7 +36,7 @@ section.apresentacao p{
 img#perfil{
     border: 2px solid rgba(0, 0, 0, 0.637);
     border-radius: 50%;
-    width: 30%;
+    width: 235px;
 }
 
 div#icones{
@@ -57,8 +57,20 @@ a>img.icone:hover{
     animation-duration: 2s;
 }
 
+div.pessoalTecnicas{
+    padding: 0;
+    background-color: rgb(15, 7, 43);
+    box-shadow: 0px 0px rgb(15, 7, 43);
+}
+
 section.perfilPessoal{
     padding-top: 8px;
+    padding: 20px;
+    margin: 0;
+    border: 2px solid;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.925);
+    box-shadow: 5px 5px 15px  rgba(0, 0, 0, 0.664);
 }
 
 section.perfilPessoal>p{
@@ -67,7 +79,15 @@ section.perfilPessoal>p{
 }
 
 section.competenciasTecnicas{
-    padding-top: 8px;
+    margin-top: 20px;
+    margin-left: 0;
+    margin-bottom: 0;
+    padding: 15px;
+   
+    border: 2px solid;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.925);
+    box-shadow: 5px 5px 15px  rgba(0, 0, 0, 0.664);
 }
 
 div.competencias{
@@ -85,12 +105,61 @@ img.code:hover{
     animation-duration: 2s;
 }
 
-footer.footer{
-    width: 100vw;
-    padding: 5px;
-    margin: 0;
-    margin-top: 40px;
-    border-radius: 0;
+section.projetos{
+    padding: 10px 30px;
+}
+
+div.slide{
+    position: relative;
+    padding:10px;
+    margin-top: -15px;
+    margin-bottom: 20px;
+    border: 2px solid rgba(0, 0, 0, 0.637);
+    border-radius: 5px;
+}
+
+a img.slideImagem{
+    border-radius: 5px;
+    width: 100%;
+}
+
+a img.slideImagem:hover{
+    animation: pulse;
+    animation-duration:1.2s ;
+}
+
+small>a{
+    text-decoration: none;
+    color: black;
+}
+
+small>a:hover{
+    color: blue;
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 10px;
+    background-color: rgb(136, 136, 136);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #353535;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
 }
 
 .card{
@@ -101,78 +170,15 @@ footer.footer{
     border: 2px solid;
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.925);
-    box-shadow: 5px 5px 15px  rgba(0, 0, 0, 0.664);;
+    box-shadow: 5px 5px 15px  rgba(0, 0, 0, 0.664);
 }
 
-@media screen and (min-width:1674px) {
-    
-    .card{
-        width: 39.4em;
-    }
-
-    section.apresentacao{
-        width: 80em;
-    }
-
-    section.competenciasTecnicas{
-        padding-bottom: 98px;
-        padding-top: 19px;
-    }
-
-    img.icone{
-        width: 20%;
-    }
-
-    img.code{
-        margin-top: 20px;
-        width: 20%;
-    }
-
-    section.projetos{
-        width: 80em;
-    }
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
 }
 
-@media screen and (max-width:541px){
-    h2{
-        font-size: 25px;
-        margin-bottom: 10px;
-    }
-
-    section.apresentacao{
-        padding: 10px;
-    }
-
-    section.apresentacao h1{
-        font-size: 25px;
-    }
-    section.apresentacao p{
-        display: none;
-    }
-    div#icones{
-        margin-top: 15px;
-        margin-bottom: 0;
-    }
-    a img.icone{
-        width: 50%;
-    }
-
-    section.perfilPessoal{
-        padding: 15px;
-    }
-
-    section.competenciasTecnicas{
-        padding: 20px;
-    }
-
-    section.competenciasTecnicas h2{
-        margin-top: -15px;
-        font-size: 20px;
-    }
-    img.code{
-        width: 20%;
-    }
-    .card{
-        width: 30em;
-    }
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
 }

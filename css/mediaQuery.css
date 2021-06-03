@@ -1,0 +1,85 @@
+@media screen and (min-width:1674px) {
+    
+    .card{
+        width: 39.4em;
+    }
+
+    section.apresentacao{
+        width: 55em;
+    }
+
+    div.pessoalTecnicas{
+        height: 555px;
+    }
+
+    section.competenciasTecnicas{
+        padding-top: 15px;
+    }
+
+    img.icone{
+        width: 20%;
+    }
+
+    img.code{
+        margin-top: 15px;
+        width: 20%;
+    }
+
+    section.projetos{
+        width: 95em;
+        padding: 10px;
+    }
+
+}
+
+@media screen and (max-width:541px){
+    h2{
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+
+    section.apresentacao{
+        padding: 10px;
+    }
+
+    section.apresentacao h1{
+        font-size: 25px;
+    }
+    section.apresentacao p{
+        display: none;
+    }
+    div#icones{
+        margin-top: 15px;
+        margin-bottom: 0;
+    }
+    a img.icone{
+        width: 50%;
+    }
+
+    section.perfilPessoal{
+        padding: 15px;
+    }
+
+    section.competenciasTecnicas{
+        padding: 20px;
+    }
+
+    section.competenciasTecnicas h2{
+        margin-top: -15px;
+        font-size: 20px;
+    }
+    img.code{
+        width: 20%;
+    }
+
+    section.projetos{
+        padding: 10px;
+    }
+
+    section.projetos h2{
+        margin-bottom: 25px;
+    }
+    .card{
+        width: 30em;
+    }
+}
