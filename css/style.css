@@ -34,9 +34,9 @@ section.apresentacao p{
 }
 
 img#perfil{
-    border: 2px solid rgba(0, 0, 0, 0.637);
+    border: 2px solid rgb(15, 7, 43);
     border-radius: 50%;
-    width: 235px;
+    width: 30%;
 }
 
 div#icones{
@@ -105,7 +105,6 @@ img.code:hover{
     animation-duration: 2s;
 }
 
-<<<<<<< HEAD
 section.projetos{
     padding: 10px 30px;
 }
@@ -141,6 +140,14 @@ small>a:hover{
     letter-spacing: 1px;
 }
 
+footer.footer{
+    width: 101vw;
+    padding: 5px;
+    margin: 0;
+    margin-top: 40px;
+    border-radius: 0;
+}
+
 .dot {
     cursor: pointer;
     height: 15px;
@@ -161,14 +168,6 @@ small>a:hover{
     -webkit-animation-duration: 1.5s;
     animation-name: fade;
     animation-duration: 1.5s;
-=======
-footer.footer{
-    width: 101vw;
-    padding: 5px;
-    margin: 0;
-    margin-top: 40px;
-    border-radius: 0;
->>>>>>> 6fa5bcd33b58d39c6c9c64b3d280f382ca944ef9
 }
 
 .card{
@@ -179,7 +178,6 @@ footer.footer{
     border: 2px solid;
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.925);
-<<<<<<< HEAD
     box-shadow: 5px 5px 15px  rgba(0, 0, 0, 0.664);
 }
 
@@ -192,80 +190,3 @@ footer.footer{
     from {opacity: .4}
     to {opacity: 1}
 }
-=======
-    box-shadow: 5px 5px 15px  rgba(0, 0, 0, 0.664);;
-}
-
-@media screen and (min-width:1674px) {
-    
-    .card{
-        width: 39.4em;
-    }
-
-    section.apresentacao{
-        width: 80em;
-    }
-
-    section.competenciasTecnicas{
-        padding-bottom: 98px;
-        padding-top: 19px;
-    }
-
-    img.icone{
-        width: 20%;
-    }
-
-    img.code{
-        margin-top: 20px;
-        width: 20%;
-    }
-
-    section.projetos{
-        width: 80em;
-    }
-}
-
-@media screen and (max-width:541px){
-    h2{
-        font-size: 25px;
-        margin-bottom: 10px;
-    }
-
-    section.apresentacao{
-        padding: 10px;
-    }
-
-    section.apresentacao h1{
-        font-size: 25px;
-    }
-    section.apresentacao p{
-        display: none;
-    }
-    div#icones{
-        margin-top: 15px;
-        margin-bottom: 0;
-    }
-    a img.icone{
-        width: 50%;
-    }
-
-    section.perfilPessoal{
-        padding: 15px;
-    }
-
-    section.competenciasTecnicas{
-        padding: 20px;
-    }
-
-    section.competenciasTecnicas h2{
-        margin-top: -15px;
-        font-size: 20px;
-    }
-    img.code{
-        width: 20%;
-    }
-    .card{
-        width: 30em;
-    }
-}
->>>>>>> 6fa5bcd33b58d39c6c9c64b3d280f382ca944ef9
