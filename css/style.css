@@ -15,7 +15,7 @@ body{
     align-items: center;
     justify-content:center;
     flex-wrap: wrap;
-    width: 98vw;
+    width: 99vw;
     background-color: rgb(15, 7, 43);
 }
 
@@ -86,7 +86,7 @@ img.code:hover{
 }
 
 footer.footer{
-    width: 100vw;
+    width: 101vw;
     padding: 5px;
     margin: 0;
     margin-top: 40px;
