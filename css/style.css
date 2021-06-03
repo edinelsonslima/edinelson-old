@@ -1,0 +1,126 @@
+@charset 'UTF-8';
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-wrap: wrap;
+    width: 98vw;
+    background-color: rgb(15, 7, 43);
+}
+
+h2{
+    font-size: 2em;
+    margin-bottom: 25px;
+}
+
+section.apresentacao h1{
+    font-size: 3em;
+}
+
+section.apresentacao p{
+    font-weight: 500;
+    font-size: 1.2em;
+}
+
+img#perfil{
+    border: 2px solid rgba(0, 0, 0, 0.637);
+    border-radius: 50%;
+    width: 30%;
+}
+
+div#icones{
+    margin-top: 50px;
+    margin-bottom: -20px;
+    display: flex;
+    align-items: flex-end;
+    justify-content:left;
+}
+
+a img.icone{
+    width: 30%;
+}
+
+a>img.icone:hover{
+    cursor: pointer;
+    animation: bounce;
+    animation-duration: 2s;
+}
+
+section.perfilPessoal{
+    padding-top: 8px;
+}
+
+section.perfilPessoal>p{
+    text-align: justify;
+    text-indent: 40px;
+}
+
+section.competenciasTecnicas{
+    padding-top: 8px;
+}
+
+div.competencias{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+img.code{
+    width: 15%;
+}
+
+img.code:hover{
+    animation: tada;
+    animation-duration: 2s;
+}
+
+.card{
+    text-align: center;
+    padding: 40px;
+    width: 50em;
+    margin: 10px;
+    border: 2px solid;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.925);
+    box-shadow: 5px 5px 15px  rgba(0, 0, 0, 0.664);;
+}
+
+@media screen and (min-width:1674px) {
+    
+    .card{
+        width: 39.4em;
+    }
+
+    section.apresentacao{
+        width: 80em;
+    }
+
+    section.competenciasTecnicas{
+        padding-bottom: 98px;
+        padding-top: 19px;
+    }
+
+    img.icone{
+        width: 20%;
+    }
+
+    img.code{
+        margin-top: 20px;
+        width: 20%;
+    }
+
+    section.projetos{
+        width: 80em;
+    }
+}
