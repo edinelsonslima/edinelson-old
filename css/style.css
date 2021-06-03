@@ -140,6 +140,63 @@ small>a:hover{
     letter-spacing: 1px;
 }
 
+section.menssagem{
+    display: block;
+    padding: 10px;
+}
+
+section.menssagem h2{
+    margin-bottom: 15px;
+}
+
+form label{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    margin-left: 25%;
+    color: rgb(15, 7, 43);
+}
+
+form input#email{
+    width: 50%;
+    height: 30px;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.267);
+    outline: none;
+}
+
+form textarea#menssagem{
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.267);
+    height: 180px;
+    width: 50%;
+    outline: none;
+    resize: none;
+}
+
+form>button{
+    margin-top: 5px;
+    width: 50%;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(45deg, rgba(15,7,43,1) 10%, rgb(7, 7, 95) 80%);
+    color: white;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+form>button:hover{
+    background: linear-gradient(45deg, rgb(7, 7, 95)10%, rgba(15,7,43,1) 80%);
+    letter-spacing: 3px;
+    font-size: 21px;
+    padding: 4.8px;
+
+}
+
 footer.footer{
     width: 101vw;
     padding: 5px;
