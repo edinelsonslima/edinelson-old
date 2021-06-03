@@ -124,3 +124,47 @@ img.code:hover{
         width: 80em;
     }
 }
+
+@media screen and (max-width:541px){
+    h2{
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+
+    section.apresentacao{
+        padding: 10px;
+    }
+
+    section.apresentacao h1{
+        font-size: 25px;
+    }
+    section.apresentacao p{
+        display: none;
+    }
+    div#icones{
+        margin-top: 15px;
+        margin-bottom: 0;
+    }
+    a img.icone{
+        width: 50%;
+    }
+
+    section.perfilPessoal{
+        padding: 15px;
+    }
+
+    section.competenciasTecnicas{
+        padding: 20px;
+    }
+
+    section.competenciasTecnicas h2{
+        margin-top: -15px;
+        font-size: 20px;
+    }
+    img.code{
+        width: 20%;
+    }
+    .card{
+        width: 30em;
+    }
+}
