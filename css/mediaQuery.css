@@ -81,6 +81,10 @@
         margin-bottom: 25px;
     }
     
+    section.algo{
+        padding: 10px;
+    }
+
     form label{
         margin-left: 10%;
     }

@@ -140,8 +140,26 @@ small>a:hover{
     letter-spacing: 1px;
 }
 
+div.mini-card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+div.banner{
+    margin: 20px;
+    background-color: rgb(15, 7, 43);
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+}
+
+div.banner:hover{
+    animation: pulse;
+    animation-duration: 1s;
+}
+
 section.menssagem{
-    display: block;
     padding: 10px;
 }
 
