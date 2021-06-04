@@ -5,16 +5,16 @@ const dots =document.querySelectorAll('.dot')
 /*Armazena o local dos banners para serem ultilizados nos slides*/
 
 let banner = [
-    {src: 'https://www.imagemhost.com.br/images/2021/06/03/tabela-periodica.png',
+    {src: '../img/banners/tabela-periodica.png',
      link: 'https://edinelsonslima.github.io/tabela-periodica.github.io/'},
 
-     {src: 'https://www.imagemhost.com.br/images/2021/06/03/nutricao.png',
+     {src: '../img/banners/nutricao.png',
       link: 'https://edinelsonslima.github.io/Aparecida-Nutricionista.github.io/'},
 
-    {src: 'https://www.imagemhost.com.br/images/2021/06/03/cronometro.png',
+    {src: '../img/banners/relogio-flip.png',
      link: 'https://edinelsonslima.github.io/cronometro.github.io/'},
 
-    {src: 'https://www.imagemhost.com.br/images/2021/06/03/relogio-flip.png',
+    {src: '../img/banners/cronometro.png',
      link: 'https://edinelsonslima.github.io/clock-dark-white.github.io/'},
 ], i=0
 
