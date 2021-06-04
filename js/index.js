@@ -45,3 +45,7 @@ dots[3].addEventListener('mouseover',()=>{
     slide.src = banner[3].src
     link.href = banner[3].link
 })
+
+function confimarEnvioEmail(){
+    alert('Menssagem Enviada com Sucesso')
+}

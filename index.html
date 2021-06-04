@@ -69,7 +69,7 @@
         <h2>Deixe uma mensagem</h2>
         <form action="https://api.staticforms.xyz/submit" method="POST">
             <input type="hidden" name="accessKey" value="5672610d-9ff8-4c83-82be-83aedccc0e15">
-            <input type="hidden" name="redirectTo" value="https://edinelsonslima.github.io/portifolio.github.io/">
+            <input type="hidden" name="redirectTo" value="https://edinelsonslima.github.io/portifolio.github.io/" onchange="confimarEnvioEmail()">
 
             <label for="nome">Nome:</label>
             <input class="dados" type="nome" name="name" id="nome" placeholder="Nome Completo">
@@ -79,7 +79,7 @@
 
             <label for="menssagem">Menssagem:</label>
             <textarea name="message" id="menssagem" cols="30" rows="10"> </textarea>            
-            <input type="submit" value="Submit" id="submit">
+            <input type="submit" value="Enviar" id="submit">
         </form>
     </section>
 
