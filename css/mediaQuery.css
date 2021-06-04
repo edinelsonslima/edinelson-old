@@ -1,4 +1,4 @@
-@media screen and (min-width:1674px) {
+@media screen and (min-width:1647px) {
     
     .card{
         width: 39em;
@@ -44,7 +44,22 @@
     
 }
 
-@media screen and (max-width:541px){
+@media screen and (max-width:900px) {
+
+    div.pessoalTecnicas{
+        padding-left: 11px;
+    }
+
+    section.perfilPessoal{
+        width: 98.2%;
+    }
+
+    section.competenciasTecnicas{
+        width: 98.2%;
+    }
+}
+
+@media screen and (max-width:500px){
     h2{
         font-size: 25px;
         margin-bottom: 10px;
@@ -70,18 +85,18 @@
 
     div.pessoalTecnicas{
         width: 30em;
+        padding-left: 11px;
     }
 
     section.perfilPessoal{
-        padding: 15px;
+        width: 97%;
     }
 
     section.competenciasTecnicas{
-        padding: 20px;
+        width: 97%;
     }
 
     section.competenciasTecnicas h2{
-        margin-top: -15px;
         font-size: 20px;
     }
     img.code{
