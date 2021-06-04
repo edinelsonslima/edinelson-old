@@ -172,10 +172,10 @@ form label{
     display: flex;
     flex-direction: column;
     margin-left: 25%;
-    color: rgb(15, 7, 43);
+    color: rgba(15, 7, 43, 0.795);
 }
 
-form input#email{
+form input.dados{
     width: 50%;
     height: 30px;
     padding: 10px;
@@ -195,7 +195,7 @@ form textarea#menssagem{
     resize: none;
 }
 
-form>button{
+form>input#submit{
     margin-top: 5px;
     width: 50%;
     padding: 5px;
@@ -207,11 +207,11 @@ form>button{
     letter-spacing: 2px;
 }
 
-form>button:hover{
+form>input#submit:hover{
     background: linear-gradient(45deg, rgb(7, 7, 95)10%, rgba(15,7,43,1) 80%);
     letter-spacing: 3px;
     font-size: 21px;
-    padding: 4.8px;
+    padding: 4.4px;
 }
 
 footer.footer{
