@@ -44,11 +44,11 @@ div#icones{
     margin-bottom: -20px;
     display: flex;
     align-items: flex-end;
-    justify-content:left;
+    justify-content:space-around;
 }
 
 a img.icone{
-    width: 30%;
+    width: 100%;
 }
 
 a>img.icone:hover{
