@@ -41,6 +41,10 @@
         width: 47em;
         padding: 10px;
     }
+
+    footer.footer{
+        width: 99%;
+    }
     
 }
 
@@ -56,6 +60,10 @@
 
     section.competenciasTecnicas{
         width: 98.2%;
+    }
+
+    footer.footer{
+        width: 97%;
     }
 }
 
