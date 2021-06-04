@@ -89,7 +89,7 @@
         margin-left: 10%;
     }
     
-    form input#email{
+    form input.dados{
         width: 80%;
     }
     
