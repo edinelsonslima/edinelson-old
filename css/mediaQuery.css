@@ -1,19 +1,26 @@
 @media screen and (min-width:1674px) {
     
     .card{
-        width: 39.4em;
+        width: 39em;
     }
 
     section.apresentacao{
-        width: 55em;
+        width: 54.8em;
+        margin-right: 20px;
     }
 
     div.pessoalTecnicas{
         height: 555px;
+        width: 38.5em;
+    }
+
+    section.perfilPessoal{
+        width: 99%;
     }
 
     section.competenciasTecnicas{
-        padding-top: 15px;
+        padding-top: 5px;
+        width: 99%;
     }
 
     img.icone{
@@ -25,8 +32,13 @@
         width: 20%;
     }
 
+    section.experiencias{
+        width: 46em;
+        height: 33em;
+    }
+
     section.projetos{
-        width: 95em;
+        width: 47em;
         padding: 10px;
     }
     
@@ -54,6 +66,10 @@
     }
     a img.icone{
         width: 50%;
+    }
+
+    div.pessoalTecnicas{
+        width: 30em;
     }
 
     section.perfilPessoal{

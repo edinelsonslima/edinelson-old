@@ -58,14 +58,16 @@ a>img.icone:hover{
 }
 
 div.pessoalTecnicas{
+    display: flex;
+    flex-direction:column;
     padding: 0;
-    background-color: rgb(15, 7, 43);
-    box-shadow: 0px 0px rgb(15, 7, 43);
+    width: 50em;
 }
 
 section.perfilPessoal{
     padding-top: 8px;
     padding: 20px;
+    width: 100%;
     margin: 0;
     border: 2px solid;
     border-radius: 10px;
@@ -79,11 +81,9 @@ section.perfilPessoal>p{
 }
 
 section.competenciasTecnicas{
-    margin-top: 20px;
-    margin-left: 0;
-    margin-bottom: 0;
+    margin: 10px 0 0 0;
+    width: 100%;
     padding: 15px;
-   
     border: 2px solid;
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.925);
@@ -103,6 +103,10 @@ img.code{
 img.code:hover{
     animation: tada;
     animation-duration: 2s;
+}
+
+section.experiencias p{
+    text-align: left;
 }
 
 section.projetos{
@@ -253,6 +257,11 @@ footer.footer{
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.925);
     box-shadow: 5px 5px 15px  rgba(0, 0, 0, 0.664);
+}
+
+.card:hover{
+    animation: pulse;
+    animation-duration: 1s;
 }
 
 @-webkit-keyframes fade {
