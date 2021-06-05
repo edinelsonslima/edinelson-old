@@ -1,0 +1,35 @@
+
+#dialogoverlay{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+}
+#dialogbox{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    border: none;
+    padding: 15px 5px ;
+	width: 400px;
+    background-color: white;
+}
+
+.button{
+    background: linear-gradient(45deg, rgba(15,7,43,1) 10%, rgb(7, 7, 95) 80%);
+    border: none;
+    color: white;
+    font-weight: 600;
+    border-radius: 5px;
+    width: 50px;
+    margin: auto;
+    margin-top: 20px;
+    padding: 3px;
+}
+
+.button:hover{
+    font-weight: 700;
+    background: linear-gradient(45deg, rgb(7, 7, 95)10%, rgba(15,7,43,1) 80%);
+}

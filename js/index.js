@@ -1,25 +1,11 @@
-const cards = document.querySelectorAll('.card')
-const slide = document.querySelector('img.slideImagem')
-const link = document.querySelector('a.mySlides')
-const dots =document.querySelectorAll('.dot')
-
-/**
- * Animação do Scroll da pagina
- 
-    window.addEventListener('scroll',animeScroll)
-    function animeScroll(){
-        let janelaTopo = window.pageYOffset + ((window.pageYOffset*3)/4)
-        cards.forEach((card)=>{
-            if(janelaTopo > card.offsetTop){
-                card.classList.add('anime')
-            }
-            else{
-                card.classList.remove('anime')
-            }
-        })
-    }
-*/
-    
+const cards    = document.querySelectorAll('.card')
+const slide    = document.querySelector('img.slideImagem')
+const link     = document.querySelector('a.mySlides')
+const dots     = document.querySelectorAll('.dot')
+const submit   = document.querySelector('#submit')
+const menssagem = document.querySelector('#menssagem')
+const input     = document.querySelectorAll('input')
+  
 /*Armazena o local dos banners para serem ultilizados nos slides*/
 let banner = [
     {src: 'https://www.imagemhost.com.br/images/2021/06/03/tabela-periodica.png',
@@ -62,3 +48,33 @@ dots[3].addEventListener('mouseover',()=>{
     slide.src = banner[3].src
     link.href = banner[3].link
 })
+
+/*Validação dos campos input da menssagem */
+submit.addEventListener('click',(e)=>{
+    if(!validaCampos()){
+        e.preventDefault()
+    }else{
+        Alert.render('Mensagem enviada com sucesso!')    
+    }
+})
+
+function validaCampos(){ 
+    if(input[2].value == ''    || 
+        input[3].value == ''   ||
+        menssagem.value == ''  ||
+        menssagem.value == ' ' ){
+            if(input[2].value == ''){
+                input[2].setAttribute('placeholder', 'PREENCHA COM SEU NOME')
+            }
+            if(input[3].value == ''){
+                input[3].setAttribute('placeholder', 'PREENCHA COM SEU EMAIL')
+            }
+            if(menssagem.value == ''){
+                menssagem.setAttribute('placeholder', 'CAMPO DE MENSAGEM ESTÁ VAZIO')
+            }
+        return false  
+    }
+    
+    return true
+    
+}
