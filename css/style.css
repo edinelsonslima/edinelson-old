@@ -18,11 +18,16 @@ main{
     align-items: center;
     justify-content:center;
     flex-wrap: wrap;
+    margin-top: 25px;
 }
 
 h2{
     font-size: 2em;
     margin-bottom: 25px;
+}
+
+section.apresentacao{
+    opacity: 1;
 }
 
 section.apresentacao h1{
@@ -74,6 +79,7 @@ section.perfilPessoal{
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.925);
     box-shadow: 5px 5px 15px  rgba(0, 0, 0, 0.664);
+    opacity: 1;
 }
 
 section.perfilPessoal>p{
@@ -89,6 +95,7 @@ section.competenciasTecnicas{
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.925);
     box-shadow: 5px 5px 15px  rgba(0, 0, 0, 0.664);
+    opacity: 1;
 }
 
 div.competencias{
@@ -256,11 +263,20 @@ footer.footer{
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.925);
     box-shadow: 5px 5px 15px  rgba(0, 0, 0, 0.664);
+    transition: 1s;
 }
 
 .card:hover{
+    background-color: rgba(255, 255, 255, 0.829);
+}
+
+.anime{
     animation: pulse;
-    animation-duration: 1s;
+    animation-duration: 2s;
+}
+
+::-webkit-scrollbar{
+    display: none;
 }
 
 @-webkit-keyframes fade {

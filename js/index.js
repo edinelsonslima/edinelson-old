@@ -1,9 +1,25 @@
+const cards = document.querySelectorAll('.card')
 const slide = document.querySelector('img.slideImagem')
 const link = document.querySelector('a.mySlides')
 const dots =document.querySelectorAll('.dot')
 
-/*Armazena o local dos banners para serem ultilizados nos slides*/
+/*Animação do Scroll da pagina*/
+window.addEventListener('scroll',animeScroll)
 
+function animeScroll(){
+    let janelaTopo = window.pageYOffset + ((window.pageYOffset*3)/3)
+    cards.forEach((card)=>{
+        if(janelaTopo > card.offsetTop){
+            card.classList.add('anime')
+        }
+        else{
+            card.classList.remove('anime')
+        }
+    })
+}
+
+    
+/*Armazena o local dos banners para serem ultilizados nos slides*/
 let banner = [
     {src: 'https://www.imagemhost.com.br/images/2021/06/03/tabela-periodica.png',
      link: 'https://edinelsonslima.github.io/tabela-periodica.github.io/'},

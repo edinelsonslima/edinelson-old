@@ -63,11 +63,11 @@
     }
 
     footer.footer{
-        width: 97%;
+        width: 98%;
     }
 }
 
-@media screen and (max-width:500px){
+@media screen and (max-width:600px){
     h2{
         font-size: 25px;
         margin-bottom: 10px;
@@ -137,6 +137,10 @@
     
     form>button{
         width: 80%;
+    }
+
+    footer.footer{
+        width: 97%;
     }
 
     .card{
