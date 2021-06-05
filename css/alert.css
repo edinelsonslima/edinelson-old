@@ -18,7 +18,7 @@
 }
 
 .button{
-    background: linear-gradient(45deg, rgba(15,7,43,1) 10%, rgb(7, 7, 95) 80%);
+    background: linear-gradient(45deg, #0f072b 10%, rgb(7, 7, 95) 80%);
     border: none;
     color: white;
     font-weight: 600;
