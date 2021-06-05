@@ -1,25 +1,23 @@
-@media screen and (min-width:1647px) {
-    
-    .card{
-        width: 39em;
-    }
-
+@media screen and (min-width:1620px) {
     section.apresentacao{
-        width: 54.8em;
-        margin-right: 20px;
+        width: 55em;
+        padding: 53px;
+        margin-right: 15px;
+        margin-top: 32px;
     }
 
-    div.pessoalTecnicas{
+    div.container{
         height: 555px;
         width: 38.5em;
     }
 
-    section.perfilPessoal{
+    section.sobre{
         width: 99%;
     }
 
-    section.competenciasTecnicas{
-        padding-top: 5px;
+    section.habilidades{
+        padding-top: 30px;
+        padding-bottom: 42px;
         width: 99%;
     }
 
@@ -28,7 +26,6 @@
     }
 
     img.code{
-        margin-top: 15px;
         width: 20%;
     }
 
@@ -44,21 +41,20 @@
 
     footer.footer{
         width: 99%;
-    }
-    
+    }    
 }
 
 @media screen and (max-width:900px) {
 
-    div.pessoalTecnicas{
+    div.container{
         padding-left: 11px;
     }
 
-    section.perfilPessoal{
+    section.sobre{
         width: 98.2%;
     }
 
-    section.competenciasTecnicas{
+    section.habilidades{
         width: 98.2%;
     }
 
@@ -91,20 +87,20 @@
         width: 50%;
     }
 
-    div.pessoalTecnicas{
+    div.container{
         width: 30em;
         padding-left: 11px;
     }
 
-    section.perfilPessoal{
+    section.sobre{
         width: 97%;
     }
 
-    section.competenciasTecnicas{
+    section.habilidades{
         width: 97%;
     }
 
-    section.competenciasTecnicas h2{
+    section.habilidades h2{
         font-size: 20px;
     }
     img.code{
@@ -117,10 +113,6 @@
 
     section.projetos h2{
         margin-bottom: 25px;
-    }
-    
-    section.algo{
-        padding: 10px;
     }
 
     form label{

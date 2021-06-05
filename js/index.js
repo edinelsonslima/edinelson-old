@@ -3,21 +3,22 @@ const slide = document.querySelector('img.slideImagem')
 const link = document.querySelector('a.mySlides')
 const dots =document.querySelectorAll('.dot')
 
-/*Animação do Scroll da pagina*/
-window.addEventListener('scroll',animeScroll)
-
-function animeScroll(){
-    let janelaTopo = window.pageYOffset + ((window.pageYOffset*3)/3)
-    cards.forEach((card)=>{
-        if(janelaTopo > card.offsetTop){
-            card.classList.add('anime')
-        }
-        else{
-            card.classList.remove('anime')
-        }
-    })
-}
-
+/**
+ * Animação do Scroll da pagina
+ 
+    window.addEventListener('scroll',animeScroll)
+    function animeScroll(){
+        let janelaTopo = window.pageYOffset + ((window.pageYOffset*3)/4)
+        cards.forEach((card)=>{
+            if(janelaTopo > card.offsetTop){
+                card.classList.add('anime')
+            }
+            else{
+                card.classList.remove('anime')
+            }
+        })
+    }
+*/
     
 /*Armazena o local dos banners para serem ultilizados nos slides*/
 let banner = [

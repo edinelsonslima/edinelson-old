@@ -26,10 +26,6 @@ h2{
     margin-bottom: 25px;
 }
 
-section.apresentacao{
-    opacity: 1;
-}
-
 section.apresentacao h1{
     font-size: 3em;
 }
@@ -46,48 +42,47 @@ img#perfil{
 }
 
 div#icones{
-    margin-top: 50px;
-    margin-bottom: -20px;
     display: flex;
     align-items: flex-end;
     justify-content:space-around;
+    margin-top: 50px;
+    margin-bottom: -20px;
 }
 
 a img.icone{
     width: 100%;
 }
 
-a>img.icone:hover{
+a img.icone:hover{
     cursor: pointer;
     animation: bounce;
     animation-duration: 2s;
 }
 
-div.pessoalTecnicas{
+div.container{
     display: flex;
     flex-direction:column;
     padding: 0;
     width: 50em;
 }
 
-section.perfilPessoal{
-    padding-top: 8px;
+section.sobre{
     padding: 20px;
-    width: 100%;
+    padding-top: 8px;
     margin: 0;
+    width: 100%;
     border: 2px solid;
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.925);
     box-shadow: 5px 5px 15px  rgba(0, 0, 0, 0.664);
-    opacity: 1;
 }
 
-section.perfilPessoal>p{
+section.sobre>p{
     text-align: justify;
     text-indent: 40px;
 }
 
-section.competenciasTecnicas{
+section.habilidades{
     margin: 10px 0 0 0;
     width: 100%;
     padding: 15px;
@@ -95,20 +90,19 @@ section.competenciasTecnicas{
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.925);
     box-shadow: 5px 5px 15px  rgba(0, 0, 0, 0.664);
-    opacity: 1;
 }
 
-div.competencias{
+div.icon-habilidades{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
 }
 
-img.code{
+img.icon{
     width: 15%;
 }
 
-img.code:hover{
+img.icon:hover{
     animation: tada;
     animation-duration: 2s;
 }
@@ -152,38 +146,11 @@ small>a:hover{
     letter-spacing: 1px;
 }
 
-div.mini-card{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-div.banner{
-    margin: 20px;
-    background-color: rgb(15, 7, 43);
-    width: 100px;
-    height: 100px;
-    border-radius: 5px;
-}
-
-div.banner:hover{
-    animation: pulse;
-    animation-duration: 1s;
-}
-
-section.menssagem{
-    padding: 10px;
-}
-
-section.menssagem h2{
-    margin-bottom: 15px;
-}
-
 form label{
-    text-align: left;
     display: flex;
     flex-direction: column;
     margin-left: 25%;
+    text-align: left;
     color: rgba(15, 7, 43, 0.795);
 }
 
@@ -198,19 +165,19 @@ form input.dados{
 }
 
 form textarea#menssagem{
+    width: 50%;
+    height: 180px;
     padding: 10px;
     border-radius: 5px;
     border: 1px solid rgba(0, 0, 0, 0.267);
-    height: 180px;
-    width: 50%;
     outline: none;
     resize: none;
 }
 
 form>input#submit{
-    margin-top: 5px;
     width: 50%;
     padding: 5px;
+    margin-top: 5px;
     border: none;
     border-radius: 5px;
     background: linear-gradient(45deg, rgba(15,7,43,1) 10%, rgb(7, 7, 95) 80%);
@@ -220,38 +187,16 @@ form>input#submit{
 }
 
 form>input#submit:hover{
-    background: linear-gradient(45deg, rgb(7, 7, 95)10%, rgba(15,7,43,1) 80%);
-    letter-spacing: 3px;
+    padding: 4.5px;
     font-size: 21px;
-    padding: 4.4px;
+    letter-spacing: 3px;
+    background: linear-gradient(45deg, rgb(7, 7, 95)10%, rgba(15,7,43,1) 80%);
 }
 
 footer.footer{
-    margin-top: 40px;
     width: 97.8%;
     padding: 10px;
-}
-
-.dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 10px;
-    background-color: rgb(136, 136, 136);
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-    background-color: #353535;
-}
-
-.fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
+    margin-top: 40px;
 }
 
 .card{
@@ -268,15 +213,29 @@ footer.footer{
 
 .card:hover{
     background-color: rgba(255, 255, 255, 0.829);
-}
-
-.anime{
     animation: pulse;
-    animation-duration: 2s;
+    animation-duration: 1s;
 }
 
-::-webkit-scrollbar{
-    display: none;
+.dot {
+    width: 15px;
+    height: 15px;
+    margin: 0 10px;
+    cursor: pointer;
+    background-color: rgb(136, 136, 136);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #353535;
+}
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
 }
 
 @-webkit-keyframes fade {
@@ -287,4 +246,8 @@ footer.footer{
   @keyframes fade {
     from {opacity: .4}
     to {opacity: 1}
+}
+
+::-webkit-scrollbar{
+    display: none;
 }
