@@ -66,6 +66,10 @@
         width: 60%;
     }
 
+    section.sobre p{
+        text-align: center;
+    }
+
     img.code{
         width: 100%;
     }
