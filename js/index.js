@@ -74,7 +74,5 @@ function validaCampos(){
             }
         return false  
     }
-    
     return true
-    
 }
