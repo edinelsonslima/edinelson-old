@@ -10,6 +10,7 @@
 #dialogbox{
     display: flex;
     flex-direction: column;
+    align-items: center;
     margin: auto;
     border: none;
     padding: 15px 5px ;

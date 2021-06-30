@@ -37,13 +37,41 @@ main{
 
 .card:hover{
     background-color: rgba(255, 255, 255, 0.829);
-    animation: pulse;
-    animation-duration: 1s;
+    /* animation: pulse;
+    animation-duration: 1s;*/
 }
 
 h2{
     font-size: 2em;
     margin-bottom: 25px;
+}
+
+/*----------------------------------Config Aviso----------------------------------*/
+section.aviso{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+    top: 0;
+    width: 100%;
+    max-height: 100px;
+    padding: 5px;
+}
+
+svg.fa-exclamation-triangle{
+    color: yellow;
+    font-size: 2.5rem;
+    filter: drop-shadow(5px 5px 5px black);
+    padding:5px;
+
+}
+
+section.aviso div p{
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding:5px;
+
 }
 
 /*----------------------------------Config Apresentaçao----------------------------------*/

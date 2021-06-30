@@ -1,37 +1,62 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edinelson Lima</title>
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/alert.css">
+    <link rel="stylesheet" href="css/style.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="shortcut icon" href="https://img.icons8.com/emoji/48/000000/card-index-dividers-emoji.png"/>
+
+    <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" data-auto-a11y="true"></script>
 </head>
-<body>
+
+<body onload="Alert.render(`Esta pagina está passando por reestilização do layout <i class='fas fa-exclamation-triangle'></i>`);">
+    <div id="dialogoverlay">
+        <div id="dialogbox" class="card"></div>
+    </div>
+
     <main>
+        <section class="card aviso">
+            <i class="fas fa-exclamation-triangle"></i>
+            <div>
+                <p>Este site está passando por uma remodelagem em seu layout.</p>
+                <small>Aguardem...</small>
+            </div>
+        </section>
+
         <section class="card apresentacao">
             <img id="perfil" src="./img/icon/icone.png" alt="icone de perfil">
             <h1>Edinelson Lima</h1>
             <p>Estudande de Ciência da Computação</p>
             <p>Programador fullStack em desenvolvimento</p>
             <div id="icones">
-                <a href="https://github.com/edinelsonslima " target="_blank" >        <img class="icone" src="./img/icon/github.png" alt="github"></a>
-                <a href="https://www.linkedin.com/in/edinelson-lima/" target="_blank"><img class="icone" src="./img/icon/linkedin.png" alt="linkedin"></a>
-                <a href="https://wa.me/+5586994116357" target="_blank">               <img class="icone" src="./img/icon/whatsapp.png" alt="whatsapp"></a>
-                <a href="mailto: edinelsonlima86@gmail.com" target="_blank">               <img class="icone" src="./img/icon/gmail.png" alt="whatsapp"></a>
+                <a href="https://github.com/edinelsonslima " target="_blank"> <img class="icone"
+                        src="./img/icon/github.png" alt="github"></a>
+                <a href="https://www.linkedin.com/in/edinelson-lima/" target="_blank"><img class="icone"
+                        src="./img/icon/linkedin.png" alt="linkedin"></a>
+                <a href="https://wa.me/+5586994116357" target="_blank"> <img class="icone" src="./img/icon/whatsapp.png"
+                        alt="whatsapp"></a>
+                <a href="mailto: edinelsonlima86@gmail.com" target="_blank"> <img class="icone"
+                        src="./img/icon/gmail.png" alt="whatsapp"></a>
             </div>
         </section>
 
         <div class="card container">
             <section class=" card sobre">
                 <h2>Sobre</h2>
-                <p>Sou acadêmico de ciências da computação na instituição Estácio Teresina, na qual venho desenvolvendo muito de meus conhecimentos gerais e de forma autodidata busco obter conhecimentos específicos. Através de cursos e atividades extracurriculares consigo agregar mais ao meu aprendizado, estou sempre em busca de aperfeiçoamento para programar codigos limpos e eficientes, nunca deixando a pratica de lado estou desenvolvendo projetos variados para me tirar da zona de conforto e mostrar minha evolução ao longo do tempo.  </p>
+                <p>Sou acadêmico de ciências da computação na instituição Estácio Teresina, na qual venho desenvolvendo
+                    muito de meus conhecimentos gerais e de forma autodidata busco obter conhecimentos específicos.
+                    Através de cursos e atividades extracurriculares consigo agregar mais ao meu aprendizado, estou
+                    sempre em busca de aperfeiçoamento para programar codigos limpos e eficientes, nunca deixando a
+                    pratica de lado estou desenvolvendo projetos variados para me tirar da zona de conforto e mostrar
+                    minha evolução ao longo do tempo. </p>
             </section>
-            
+
             <section class=" card skills">
                 <h2>Skills</h2>
                 <div class="icon-skills">
@@ -47,12 +72,14 @@
         <section class="card experiencias">
             <h2>Experiências Profissionais</h2>
             <p><strong> DESENVOLVER FULLSTACK JR </strong> : Going 2
-                <br> - Atuava na area de desenvolvimento de aplicações usando tecnologias como React, HTML 5, CSS 3. 
+                <br> - Atuava na area de desenvolvimento de aplicações usando tecnologias como React, HTML 5, CSS 3.
             </p>
             <br>
-            <p><strong>SUPORTE TÉCNICO</strong> : Prefeitura Municipal de Lago Dos Rodrigues-MA 
-                <br> - Dentre as principais responsabilidades destacam-se a obrigação de manter o pleno funcionamento dos computadores e demais equipamentos relacionados. 
-                <br> - Instalação de softwares e ferramentas necessárias para a continuidade do trabalho dentro do setor.
+            <p><strong>SUPORTE TÉCNICO</strong> : Prefeitura Municipal de Lago Dos Rodrigues-MA
+                <br> - Dentre as principais responsabilidades destacam-se a obrigação de manter o pleno funcionamento
+                dos computadores e demais equipamentos relacionados.
+                <br> - Instalação de softwares e ferramentas necessárias para a continuidade do trabalho dentro do
+                setor.
             </p>
         </section>
 
@@ -60,9 +87,10 @@
             <h2>Projetos</h2>
             <div class="slide">
                 <a class="mySlides" href=" " target="_blank">
-                    <img class="slideImagem" src="" alt="BannerProjeto">                
+                    <img class="slideImagem" src="" alt="BannerProjeto">
                 </a>
-                <small>Acesse meu <a href="https://github.com/edinelsonslima" target="_blank">GitHub</a> para mais projetos</small>
+                <small>Acesse meu <a href="https://github.com/edinelsonslima" target="_blank">GitHub</a> para mais
+                    projetos</small>
             </div>
             <div class="dots">
                 <span class="dot "></span>
@@ -80,12 +108,12 @@
 
                 <label for="nome">Nome:</label>
                 <input class="dados" type="nome" name="name" id="nome" placeholder="Nome Completo" required>
-                
+
                 <label for="email">Email:</label>
                 <input class="dados" type="email" name="email" id="email" placeholder="Digite seu email" required>
 
                 <label for="menssagem">Menssagem:</label>
-                <textarea name="message" id="menssagem" cols="30" rows="10" required></textarea>            
+                <textarea name="message" id="menssagem" cols="30" rows="10" required></textarea>
                 <input type="submit" value="Enviar" id="submit">
             </form>
         </section>
@@ -96,9 +124,6 @@
         <script src="js/index.js"></script>
         <script src="js/alert.js"></script>
     </footer>
-
-    <div id="dialogoverlay">
-        <div id="dialogbox" class="card"></div>
-    </div>
 </body>
+
 </html>

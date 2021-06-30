@@ -5,7 +5,7 @@ const dots     = document.querySelectorAll('.dot')
 const submit   = document.querySelector('#submit')
 const menssagem = document.querySelector('#menssagem')
 const input     = document.querySelectorAll('input')
-  
+
 /*Armazena o local dos banners para serem ultilizados nos slides*/
 let banner = [
     {src: 'https://www.imagemhost.com.br/images/2021/06/03/tabela-periodica.png',
@@ -26,7 +26,7 @@ addEventListener('onchange', alternarBanners())
 
 setInterval(alternarBanners,3000)
 function alternarBanners(){
-    slide.src = banner[i].src
+    slide.src = banner[i].src 
     link.href = banner[i].link
     i == (banner.length-1)?i=0:i++
 }
