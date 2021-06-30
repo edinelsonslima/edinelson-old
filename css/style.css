@@ -52,11 +52,9 @@ section.aviso{
     align-items: center;
     justify-content: center;
     gap: 20px;
-    position: relative;
-    top: 0;
     width: 100%;
     max-height: 100px;
-    padding: 5px;
+    /* padding: 15px; */
 }
 
 svg.fa-exclamation-triangle{
@@ -68,7 +66,7 @@ svg.fa-exclamation-triangle{
 }
 
 section.aviso div p{
-    font-size: 1.3rem;
+    font-size: 1rem;
     font-weight: bold;
     padding:5px;
 
