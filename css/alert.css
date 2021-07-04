@@ -1,6 +1,6 @@
 
 #dialogoverlay{
-    display: flex;
+    display: none;
     height: 100vh;
     width: 100vw;
 	position: fixed;
